@@ -3,6 +3,7 @@ package com.example.contadorapp.ui
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.material3.Button
 
 import androidx.compose.material3.Text
@@ -20,16 +21,23 @@ fun ContadorApp(
 
     ){
         Column {
-            Text("Hola")
-            Button(
-                onClick = { /*TODO*/ }
-            ) {
-                Text("sumar")
+            Row{
+                Text("Hola")
+                Button(
+                    onClick = { /*TODO*/ }
+                ) {
+                    Text("sumar")
+                }
             }
-            Button(onClick = { /*TODO*/ }
+            Row {
+                Button(onClick = {
+                /*TODO*/ }
             ) {
-                Text("restar")
+                    Text("restar")
+                }
+                Text("Hola")
             }
+
         }
     }
 }
